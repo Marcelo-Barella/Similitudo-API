@@ -501,7 +501,7 @@ def save_model(caption_model):
     # Save the model in TensorFlow SavedModel format
     caption_model.save_weights('model.h5')
     # Save the tokenizer vocabulary
-    with open('vocab_coco.file', 'wb') as vocab_file:
+    with open('model/vocab_coco.file', 'wb') as vocab_file:
         pickle.dump(tokenizer.get_vocabulary(), vocab_file)
 
 def load_image_from_path(img_path):

@@ -21,7 +21,7 @@ UNITS = 512
 EPOCHS = 15
 # Carrega o modelo salvo
 # caption_model = kaggle_transformer.train_model()
-caption_model = kaggle_transformer.load_model('model.h5')
+caption_model = kaggle_transformer.load_model('model/model.h5')
 
 app = Flask(__name__)
 CORS(app)
